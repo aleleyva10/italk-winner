@@ -1,0 +1,30 @@
+{
+  "name": "italk-winner",
+  "version": "1.0.0",
+  "description": "iTalk is a full-stack mobile application that provides the user with common phrases in Spanish and English, the application would allow the user to speak and learn the basics of the desired language. It gives the user the possibility to use these common phrases, add phrases to your favorites, and check what new phrases other users have upload to the application. Also, it gives you the translation of any new phrase you enter, in Spanish or in English.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleleyva10/italk-winner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleleyva10/italk-winner/issues"
+  },
+  "homepage": "https://github.com/aleleyva10/italk-winner#readme",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1",
+    "pg": "^6.4.0",
+    "sweetalert": "^1.1.3"
+  }
+}
