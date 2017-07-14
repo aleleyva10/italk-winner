@@ -85,4 +85,4 @@ router.post('/addPhrases', function (req, res) {
 // });
 //
 //
-// module.exports = router;
+module.exports = router;

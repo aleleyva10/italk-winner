@@ -6,6 +6,8 @@ myApp.config(function($routeProvider) {
     templateUrl: 'views/partials/login.html'
   }).when('/home', {
     templateUrl: 'views/partials/home.html'
+  }).when('/list2', {
+    templateUrl: 'view/partials/list2.html'
   });
 });
 
