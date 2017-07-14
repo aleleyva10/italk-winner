@@ -1,0 +1,38 @@
+<div class="">
+  <div class="homeTitle">
+    <h1 ng-init="itc.init()">Welcome Back {{itc.loggedInUser}} !! </h1>
+    <button class="logout" ng-click='itc.logOut()'>Log Out</button>
+  </div>
+  <div class="inputValue">
+
+
+    <input type="text" ng-model='itc.item' placeholder="Item Name">
+    <input type="url" ng-model='itc.url' placeholder="Item Image">
+    <button class="addBtn" type="button" ng-click="itc.getPhrases()">GET</button>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 itemDetail" ng-repeat='item in itc.items'>
+      <p> <img ng-src="{{item.phrase}}" alt=""> </p>
+
+      <p class="itemName">{{item.item}} <button ng-if="item.userID == itc.loggedInID" ng-click="itc.deleteItem(item._id)" type="delete">X</button></p>
+
+    </div>
+  </div>
+  <a class="btn btn-danger" href="#">
+  <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+  <a class="btn btn-default btn-sm" href="#">
+  <i class="fa fa-cog"></i> Settings</a>
+  <div class="input-group margin-bottom-sm">
+    <a class="btn btn-danger" href="path/to/settings" aria-label="Delete">
+  <i class="fa fa-trash-o" aria-hidden="true"></i>
+  </a>
+    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="form-control" type="text" placeholder="Email address">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+    <input class="form-control" type="password" placeholder="Password">
+  </div>
+</div>

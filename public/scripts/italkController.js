@@ -3,8 +3,6 @@ console.log('it works');
 
 myApp.config(function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'views/index.html'
-  }).when('/login', {
     templateUrl: 'views/partials/login.html'
   }).when('/home', {
     templateUrl: 'views/partials/home.html'

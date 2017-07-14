@@ -1,0 +1,48 @@
+
+
+
+  <div class="login-wrap">
+    <div class="login-html">
+      <div class="app-title">
+        <h1>iTalk</h1><span>App <i class="fa fa-code" aria-hidden="true"></i> by <a>Ale Leyva</a></span>
+      </div>
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" ng-model="itc.username" class="input">
+          </div>
+
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" ng-model="itc.password" class="input" data-type="password">
+          </div>
+
+          <div class="group">
+            <input type="submit" class="button" ng-click="itc.logIn()" value="Sign In">
+          </div>
+        </div>
+
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" ng-model="itc.username" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" ng-model="itc.password" class="input" data-type="password">
+          </div>
+
+          <div class="group">
+            <input type="submit" class="button" ng-click="itc.register()" value="Sign Up">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>A FUN AND SIMPLE WAY TO LEARN A LANGUAGE</footer>
+      </div>
+    </div>
+
+  </div>
